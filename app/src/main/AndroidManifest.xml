@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.retrievam">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logothemedbg"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Retrievam"
+        tools:targetApi="31">
+
+        <!-- Define your activities -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <!-- Intent filter for the main launcher activity -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other activities with exported attribute set to false -->
+        <activity
+            android:name=".MessegesContact"
+            android:exported="false" />
+
+        <activity
+            android:name=".chatBoxActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".viewPostDetails"
+            android:exported="false" />
+
+        <activity
+            android:name=".MyAdapterPosts"
+            android:exported="false" />
+
+        <activity
+            android:name=".signupActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".loginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <!-- Intent filter for the splash activity (launcher) -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
